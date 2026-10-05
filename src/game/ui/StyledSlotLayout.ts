@@ -36,7 +36,7 @@ export const StyledMachine = styled.section`
     height: 100%;
     min-height: 0;
     max-width: none;
-    grid-template-columns: minmax(0, 1fr) 176px;
+    grid-template-columns: minmax(0, 1fr) 88px;
     grid-template-rows: auto minmax(0, 1fr);
     grid-template-areas:
       "hud hud"
@@ -56,6 +56,7 @@ export const StyledTopBar = styled.header`
     gap: 8px;
   }
 `;
+
 
 
 export const StyledMeter = styled.div`
@@ -229,10 +230,14 @@ export const StyledBetGroup = styled.div`
 
   ${landscapePhone} {
     width: 100%;
+    padding: 4px;
+    gap: 2px;
 
     button {
-      min-width: 44px;
-      min-height: 44px;
+      min-width: 0;
+      flex: 0 0 22px;
+      min-height: 36px;
+      padding: 6px 0;
     }
   }
 `;
@@ -244,6 +249,10 @@ export const StyledBetValue = styled.div`
   font-size: 20px;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
+
+  ${landscapePhone} {
+    font-size: 14px;
+  }
 `;
 
 type StyledButtonProps = {
@@ -287,6 +296,8 @@ export const StyledSpinButton = styled(StyledButton)`
     min-width: 0;
     min-height: 72px;
     height: auto;
+    padding: 8px 4px;
+    font-size: 16px;
   }
 `;
 

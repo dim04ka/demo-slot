@@ -1,8 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { App } from "./app/App";
-import "./game/view/pixiSetup";
+import { setupPixi } from "./game/view/pixiSetup";
 
+setupPixi();
 
 const root = document.getElementById("root");
 
