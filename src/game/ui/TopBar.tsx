@@ -1,6 +1,5 @@
 import { formatCredits } from "./formatCredits";
 import {
-  StyledBadge,
   StyledMeter,
   StyledMeterLabel,
   StyledMeterValue,

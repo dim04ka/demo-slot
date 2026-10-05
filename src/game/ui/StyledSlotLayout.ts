@@ -57,15 +57,6 @@ export const StyledTopBar = styled.header`
   }
 `;
 
-export const StyledBadge = styled.span`
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: #f0c93a;
-  color: #241808;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-`;
 
 export const StyledMeter = styled.div`
   min-width: 0;
